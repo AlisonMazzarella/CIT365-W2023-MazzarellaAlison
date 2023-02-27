@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome</h2>
+<h3>The Church has provided a wonderful amount of appropriate movies for you and the whole family. 
+    Enjoy browsing through the catalog of Church movies for inspiration for your next movie night or FHE! 
+</h3>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["NumTimes"]!; i++)
+    {
+            <li>@ViewData["Message"]</li>
+    }
+</ul>
